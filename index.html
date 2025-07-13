@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smooth Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="ui-overlay">
+            <div class="score-container">Score: <span id="score">0</span></div>
+        </div>
+
+        <div class="start-screen active" id="startScreen">
+            <div class="modal-content">
+                <h1>Smooth Snake</h1>
+                <p>A modern take on the classic Snake game with smooth animations</p>
+                <button id="startButton">Start Game</button>
+                <div class="controls">
+                    Use arrow keys or WASD to control the snake
+                </div>
+            </div>
+        </div>
+
+        <div class="game-over-screen" id="gameOverScreen">
+            <div class="modal-content">
+                <h1>Game Over!</h1>
+                <p>Your final score: <span id="finalScore">0</span></p>
+                <button id="restartButton">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.java"></script>
+</body>
+</html>
